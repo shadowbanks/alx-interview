@@ -19,7 +19,7 @@ def canUnlockAll(boxes):
         else:
             entered[idx] = False
     for idx, val in entered.items():
-        if val == False and idx in keys:
+        if val is False and idx in keys:
             keys.update(boxes[idx])
 
     if total_boxes == len(keys):
