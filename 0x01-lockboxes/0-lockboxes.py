@@ -9,6 +9,8 @@ each box may contain keys to the other boxes.
 
 def canUnlockAll(boxes):
     """Check if all boxes can be unlocked"""
+    if not isinstance(boxes, list) or boxes is None:
+        return False
     total_boxes = len(boxes)
     keys = set([0])
     entered = {}
