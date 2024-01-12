@@ -14,7 +14,7 @@ def canUnlockAll(boxes):
     entered = {}
     for idx, box in enumerate(boxes):
         if idx in keys:
-            keys.update(box)
+            keys.update({x for x in box if x < total_boxes})
             entered[idx] = True
         else:
             entered[idx] = False
