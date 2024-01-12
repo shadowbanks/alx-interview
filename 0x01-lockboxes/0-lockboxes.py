@@ -22,6 +22,6 @@ def canUnlockAll(boxes):
         if val is False and idx in keys:
             keys.update(boxes[idx])
 
-    if total_boxes == len(keys):
+    if total_boxes == len(keys) or total_boxes == 0:
         return True
     return False
