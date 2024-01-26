@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+"""
+Log Parsing (README for more details)
+"""
 import sys
 import re
 
 
 def print_output(status_code, total_Size):
+    """Print output"""
     print(f"File size: {total_Size}")
     for key, value in status_code.items():
         if value > 0:
